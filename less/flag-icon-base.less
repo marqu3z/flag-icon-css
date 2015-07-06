@@ -26,3 +26,14 @@
     }
   }
 }
+
+
+.flag-icon-alias(@country, @locale) {
+  .flag-icon-@{locale} {
+    background-image: ~"url(@{flag-icon-css-path}/4x3/@{country}.svg)";
+    &.flag-icon-squared {
+      background-image: ~"url(@{flag-icon-css-path}/1x1/@{country}.svg)";
+    }
+  }
+}
+
